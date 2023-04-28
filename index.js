@@ -3,7 +3,7 @@ const app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 const path = require('path');
-const port = 8000;
+const port = 5000;
 app.get('/', function(req, res){
    res.sendFile(path.join(__dirname,'index.html'));});
 var users = [];
